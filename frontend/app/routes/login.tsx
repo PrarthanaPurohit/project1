@@ -38,6 +38,7 @@ export default function LoginPage() {
 
   return (
     <div style={styles.container}>
+<<<<<<< HEAD
       <style>{`
         @keyframes slideUp {
           from {
@@ -68,11 +69,16 @@ export default function LoginPage() {
           <p style={styles.subtitle}>Sign in to manage your showcase platform</p>
         </div>
         
+=======
+      <div style={styles.card}>
+        <h1 style={styles.title}>Admin Login</h1>
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
         <form onSubmit={handleSubmit} style={styles.form}>
           <div style={styles.formGroup}>
             <label htmlFor="username" style={styles.label}>
               Username or Email
             </label>
+<<<<<<< HEAD
             <div style={styles.inputWrapper}>
               <span style={styles.inputIcon}>👤</span>
               <input
@@ -86,12 +92,24 @@ export default function LoginPage() {
                 placeholder="Enter your username"
               />
             </div>
+=======
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              style={styles.input}
+              disabled={isLoading}
+            />
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
           </div>
 
           <div style={styles.formGroup}>
             <label htmlFor="password" style={styles.label}>
               Password
             </label>
+<<<<<<< HEAD
             <div style={styles.inputWrapper}>
               <span style={styles.inputIcon}>🔒</span>
               <input
@@ -105,11 +123,25 @@ export default function LoginPage() {
                 placeholder="Enter your password"
               />
             </div>
+=======
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={styles.input}
+              disabled={isLoading}
+            />
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
           </div>
 
           {error && (
             <div style={styles.error}>
+<<<<<<< HEAD
               <span style={styles.errorIcon}>⚠️</span>
+=======
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
               {error}
             </div>
           )}
@@ -122,6 +154,7 @@ export default function LoginPage() {
               ...(isLoading ? styles.buttonDisabled : {}),
             }}
           >
+<<<<<<< HEAD
             {isLoading ? '🔄 Logging in...' : '🚀 Sign In'}
           </button>
         </form>
@@ -129,6 +162,11 @@ export default function LoginPage() {
         <div style={styles.footer}>
           <p>Secure admin access • Showcase Platform</p>
         </div>
+=======
+            {isLoading ? 'Logging in...' : 'Login'}
+          </button>
+        </form>
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
       </div>
     </div>
   );
@@ -140,6 +178,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+<<<<<<< HEAD
     background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     padding: '20px',
     position: 'relative' as const,
@@ -181,16 +220,40 @@ const styles = {
     fontSize: '14px',
     color: '#7f8c8d',
     marginTop: '8px',
+=======
+    backgroundColor: '#f5f5f5',
+    padding: '20px',
+  },
+  card: {
+    backgroundColor: 'white',
+    padding: '40px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+    width: '100%',
+    maxWidth: '400px',
+  },
+  title: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    marginBottom: '30px',
+    textAlign: 'center' as const,
+    color: '#333',
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
   },
   form: {
     display: 'flex',
     flexDirection: 'column' as const,
+<<<<<<< HEAD
     gap: '24px',
+=======
+    gap: '20px',
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
   },
   formGroup: {
     display: 'flex',
     flexDirection: 'column' as const,
     gap: '8px',
+<<<<<<< HEAD
     position: 'relative' as const,
   },
   label: {
@@ -259,5 +322,45 @@ const styles = {
     textAlign: 'center' as const,
     fontSize: '13px',
     color: '#7f8c8d',
+=======
+  },
+  label: {
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#555',
+  },
+  input: {
+    padding: '12px',
+    fontSize: '14px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+    outline: 'none',
+    transition: 'border-color 0.2s',
+    color: '#2c3e50',
+    backgroundColor: 'white',
+  },
+  error: {
+    padding: '12px',
+    backgroundColor: '#fee',
+    color: '#c33',
+    borderRadius: '4px',
+    fontSize: '14px',
+    border: '1px solid #fcc',
+  },
+  button: {
+    padding: '12px',
+    fontSize: '16px',
+    fontWeight: '600',
+    color: 'white',
+    backgroundColor: '#007bff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    transition: 'background-color 0.2s',
+  },
+  buttonDisabled: {
+    backgroundColor: '#6c757d',
+    cursor: 'not-allowed',
+>>>>>>> 202b531efa107ec98f86b19c6d2d95a1fafa03cc
   },
 };

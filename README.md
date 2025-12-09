@@ -1,31 +1,6 @@
-# MERN Showcase Platform
+# Showcase Platform
 
 A full-stack web application built with MongoDB, Express.js, React, and Node.js for showcasing projects and client testimonials. The platform features a public-facing landing page and a secure administrative panel for content management.
-
-![Platform Overview](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=MERN+Showcase+Platform)
-
-## Table of Contents
-
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Database Seeding](#database-seeding)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Troubleshooting](#troubleshooting)
-- [Project Documentation](#project-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Quick Start
-
-Want to get started quickly? Check out the [Quick Start Guide](./QUICK_START.md) for a 5-minute setup!
 
 ## Features
 
@@ -118,12 +93,10 @@ Want to get started quickly? Check out the [Quick Start Guide](./QUICK_START.md)
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
-- **MongoDB** (v6.0 or higher) - [Download](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **Node.js** (v18 or higher)
+- **MongoDB** (v6.0 or higher) 
 - **npm** (comes with Node.js) or **yarn**
-- **Git** - [Download](https://git-scm.com/)
-
-## Installation
+- **Git** 
 
 ### 1. Clone the Repository
 
@@ -152,7 +125,7 @@ Create a `.env` file based on `.env.example`:
 cp .env.example .env
 ```
 
-Update the `.env` file with your configuration (see [Configuration](#configuration) section below).
+Update the `.env` file with your configuration 
 
 The backend will be ready to run after configuration.
 
@@ -176,7 +149,7 @@ Create a `.env` file based on `.env.example`:
 cp .env.example .env
 ```
 
-Update the `.env` file with your API URL (see [Configuration](#configuration) section below).
+Update the `.env` file with your API URL 
 
 ## Configuration
 
@@ -353,9 +326,6 @@ This will create:
 - Sample data uses placeholder images from placeholder.com
 - You can modify the sample data in `backend/scripts/seed.js`
 
-## API Documentation
-
-Comprehensive API documentation is available in [API_DOCUMENTATION.md](./API_DOCUMENTATION.md).
 
 ### Quick API Reference
 
@@ -372,160 +342,25 @@ Comprehensive API documentation is available in [API_DOCUMENTATION.md](./API_DOC
 - `GET/DELETE /api/admin/contacts` - Manage contact submissions
 - `GET/DELETE /api/admin/subscriptions` - Manage newsletter subscriptions
 
-See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for detailed request/response formats and examples.
-
-## Testing
-
-### Backend Tests
-
-Run all backend tests:
-
-```bash
-cd backend
-npm test
-```
-
-**Test Coverage:**
-- Server initialization and configuration
-- Database models and validation
-- Authentication and JWT tokens
-- Image upload and processing
-- Public API endpoints
-- Protected admin endpoints
-- Contact and newsletter functionality
-
-### Frontend Tests
-
-Currently, frontend tests are not implemented. Future enhancements will include:
-- Component unit tests
-- Integration tests
-- End-to-end tests
-
-## Deployment
-
-For detailed deployment instructions, see the [Deployment Guide](./DEPLOYMENT_GUIDE.md).
-
-### Quick Deployment Overview
-
-**Deployment Options:**
-
-**Backend:**
-- Heroku (easiest)
-- DigitalOcean App Platform
-- AWS EC2/Elastic Beanstalk
-- Railway
-- Render
-
-**Frontend:**
-- Vercel (recommended)
-- Netlify
-- AWS S3 + CloudFront
-
-**Database:**
-- MongoDB Atlas (recommended)
-
-### Pre-Deployment Checklist
-
-- [ ] Change default admin credentials
-- [ ] Use strong JWT_SECRET (minimum 32 characters)
-- [ ] Configure CORS for your domain
-- [ ] Set NODE_ENV=production
-- [ ] Set up MongoDB Atlas or secure database
-- [ ] Configure environment variables
-- [ ] Enable HTTPS/SSL
-- [ ] Set up monitoring and error tracking
-
-See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete step-by-step instructions.
-
-## Screenshots
 
 ### Landing Page
 
-![Landing Page - Projects Section](https://via.placeholder.com/800x500/4A90E2/FFFFFF?text=Projects+Section)
-
-*Projects showcase section displaying portfolio items*
-
-![Landing Page - Happy Clients Section](https://via.placeholder.com/800x500/50C878/FFFFFF?text=Happy+Clients+Section)
+*Project showcase section displaying portfolio items*
 
 *Client testimonials with images and descriptions*
-
-![Landing Page - Contact Form](https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Contact+Form)
 
 *Contact form for visitor inquiries*
 
 ### Admin Panel
 
-![Admin Login](https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Admin+Login)
-
 *Secure admin authentication page*
-
-![Admin Dashboard - Projects](https://via.placeholder.com/800x500/3498DB/FFFFFF?text=Admin+Projects+Management)
 
 *Admin panel for managing projects*
 
-![Admin Dashboard - Clients](https://via.placeholder.com/800x500/E67E22/FFFFFF?text=Admin+Clients+Management)
-
 *Admin panel for managing client testimonials*
-
-![Admin Dashboard - Contact Submissions](https://via.placeholder.com/800x500/1ABC9C/FFFFFF?text=Contact+Submissions)
 
 *View and manage contact form submissions*
 
-## Troubleshooting
-
-### Common Issues
-
-**MongoDB Connection Error:**
-```
-Error: connect ECONNREFUSED 127.0.0.1:27017
-```
-**Solution:** Ensure MongoDB is running. Start it with `mongod` command.
-
-**Port Already in Use:**
-```
-Error: listen EADDRINUSE: address already in use :::5000
-```
-**Solution:** Change the PORT in `.env` or kill the process using that port.
-
-**CORS Error:**
-```
-Access to XMLHttpRequest has been blocked by CORS policy
-```
-**Solution:** Ensure backend CORS is configured to allow your frontend origin.
-
-**Image Upload Fails:**
-```
-Error: File too large
-```
-**Solution:** Check MAX_FILE_SIZE in backend `.env` and ensure image is under 5MB.
-
-**JWT Token Invalid:**
-```
-Error: jwt malformed
-```
-**Solution:** Clear localStorage and log in again. Ensure JWT_SECRET matches between sessions.
-
-## Project Documentation
-
-### User Guides
-
-- **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 minutes
-- **[API_DOCUMENTATION.md](./API_DOCUMENTATION.md)** - Complete API reference with examples
-- **[DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)** - Step-by-step deployment instructions
-
-### Technical Documentation
-
-Detailed project specifications are available in the `.kiro/specs/mern-showcase-platform/` directory:
-
-- **[requirements.md](.kiro/specs/mern-showcase-platform/requirements.md)** - Feature requirements and acceptance criteria
-- **[design.md](.kiro/specs/mern-showcase-platform/design.md)** - System architecture and design decisions
-- **[tasks.md](.kiro/specs/mern-showcase-platform/tasks.md)** - Implementation task list
-
-### Additional Documentation
-
-- **[RESPONSIVE_DESIGN.md](./RESPONSIVE_DESIGN.md)** - Responsive design implementation details
-- **[RESPONSIVE_DESIGN_VERIFICATION.md](./RESPONSIVE_DESIGN_VERIFICATION.md)** - Responsive design testing checklist
-- **[frontend/AUTHENTICATION.md](./frontend/AUTHENTICATION.md)** - Authentication implementation details
 
 ## Contributing
 
@@ -540,38 +375,5 @@ Contributions are welcome! We appreciate your help in making this project better
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
-### Detailed Guidelines
 
-For detailed contribution guidelines, coding standards, and development workflow, please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-**Key Points:**
-- Follow the existing code style
-- Write tests for new features
-- Update documentation as needed
-- Use conventional commit messages
-- Ensure all tests pass before submitting PR
-
-## Future Enhancements
-
-- [ ] Rich text editor for descriptions
-- [ ] Project categories and tags
-- [ ] Search and filter functionality
-- [ ] Email notifications for contact submissions
-- [ ] Export newsletter subscribers to CSV
-- [ ] Multiple admin roles and permissions
-- [ ] Activity logs
-- [ ] Analytics dashboard
-- [ ] Social media integration
-- [ ] Progressive Web App (PWA) features
-
-## License
-
-ISC
-
-## Support
-
-For issues, questions, or contributions, please open an issue on the repository.
-
----
-
-**Built with ❤️ using the MERN Stack**
