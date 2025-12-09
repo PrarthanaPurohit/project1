@@ -2,31 +2,6 @@
 
 A full-stack web application built with MongoDB, Express.js, React, and Node.js for showcasing projects and client testimonials. The platform features a public-facing landing page and a secure administrative panel for content management.
 
-![Platform Overview]
-
-## Table of Contents
-
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Database Seeding](#database-seeding)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Troubleshooting](#troubleshooting)
-- [Project Documentation](#project-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Quick Start
-
-Want to get started quickly? Check out the [Quick Start Guide](./QUICK_START.md) for a 5-minute setup!
-
 ## Features
 
 ### Public Features
@@ -118,12 +93,10 @@ Want to get started quickly? Check out the [Quick Start Guide](./QUICK_START.md)
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
-- **MongoDB** (v6.0 or higher) - [Download](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **Node.js** (v18 or higher)
+- **MongoDB** (v6.0 or higher) 
 - **npm** (comes with Node.js) or **yarn**
-- **Git** - [Download](https://git-scm.com/)
-
-## Installation
+- **Git** 
 
 ### 1. Clone the Repository
 
@@ -152,7 +125,7 @@ Create a `.env` file based on `.env.example`:
 cp .env.example .env
 ```
 
-Update the `.env` file with your configuration (see [Configuration](#configuration) section below).
+Update the `.env` file with your configuration 
 
 The backend will be ready to run after configuration.
 
@@ -176,7 +149,7 @@ Create a `.env` file based on `.env.example`:
 cp .env.example .env
 ```
 
-Update the `.env` file with your API URL (see [Configuration](#configuration) section below).
+Update the `.env` file with your API URL 
 
 ## Configuration
 
@@ -353,9 +326,6 @@ This will create:
 - Sample data uses placeholder images from placeholder.com
 - You can modify the sample data in `backend/scripts/seed.js`
 
-## API Documentation
-
-Comprehensive API documentation is available in [API_DOCUMENTATION.md](./API_DOCUMENTATION.md).
 
 ### Quick API Reference
 
@@ -372,38 +342,22 @@ Comprehensive API documentation is available in [API_DOCUMENTATION.md](./API_DOC
 - `GET/DELETE /api/admin/contacts` - Manage contact submissions
 - `GET/DELETE /api/admin/subscriptions` - Manage newsletter subscriptions
 
-See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for detailed request/response formats and examples.
-
 
 ### Landing Page
 
-![Landing Page - Projects Section](https://via.placeholder.com/800x500/4A90E2/FFFFFF?text=Projects+Section)
-
-*Projects showcase section displaying portfolio items*
-
-![Landing Page - Happy Clients Section](https://via.placeholder.com/800x500/50C878/FFFFFF?text=Happy+Clients+Section)
+*Project showcase section displaying portfolio items*
 
 *Client testimonials with images and descriptions*
-
-![Landing Page - Contact Form](https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Contact+Form)
 
 *Contact form for visitor inquiries*
 
 ### Admin Panel
 
-![Admin Login](https://via.placeholder.com/800x500/9B59B6/FFFFFF?text=Admin+Login)
-
 *Secure admin authentication page*
-
-![Admin Dashboard - Projects](https://via.placeholder.com/800x500/3498DB/FFFFFF?text=Admin+Projects+Management)
 
 *Admin panel for managing projects*
 
-![Admin Dashboard - Clients](https://via.placeholder.com/800x500/E67E22/FFFFFF?text=Admin+Clients+Management)
-
 *Admin panel for managing client testimonials*
-
-![Admin Dashboard - Contact Submissions](https://via.placeholder.com/800x500/1ABC9C/FFFFFF?text=Contact+Submissions)
 
 *View and manage contact form submissions*
 
