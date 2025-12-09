@@ -1,8 +1,8 @@
-# MERN Showcase Platform
+# Showcase Platform
 
 A full-stack web application built with MongoDB, Express.js, React, and Node.js for showcasing projects and client testimonials. The platform features a public-facing landing page and a secure administrative panel for content management.
 
-![Platform Overview](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=MERN+Showcase+Platform)
+![Platform Overview]
 
 ## Table of Contents
 
@@ -374,70 +374,6 @@ Comprehensive API documentation is available in [API_DOCUMENTATION.md](./API_DOC
 
 See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for detailed request/response formats and examples.
 
-## Testing
-
-### Backend Tests
-
-Run all backend tests:
-
-```bash
-cd backend
-npm test
-```
-
-**Test Coverage:**
-- Server initialization and configuration
-- Database models and validation
-- Authentication and JWT tokens
-- Image upload and processing
-- Public API endpoints
-- Protected admin endpoints
-- Contact and newsletter functionality
-
-### Frontend Tests
-
-Currently, frontend tests are not implemented. Future enhancements will include:
-- Component unit tests
-- Integration tests
-- End-to-end tests
-
-## Deployment
-
-For detailed deployment instructions, see the [Deployment Guide](./DEPLOYMENT_GUIDE.md).
-
-### Quick Deployment Overview
-
-**Deployment Options:**
-
-**Backend:**
-- Heroku (easiest)
-- DigitalOcean App Platform
-- AWS EC2/Elastic Beanstalk
-- Railway
-- Render
-
-**Frontend:**
-- Vercel (recommended)
-- Netlify
-- AWS S3 + CloudFront
-
-**Database:**
-- MongoDB Atlas (recommended)
-
-### Pre-Deployment Checklist
-
-- [ ] Change default admin credentials
-- [ ] Use strong JWT_SECRET (minimum 32 characters)
-- [ ] Configure CORS for your domain
-- [ ] Set NODE_ENV=production
-- [ ] Set up MongoDB Atlas or secure database
-- [ ] Configure environment variables
-- [ ] Enable HTTPS/SSL
-- [ ] Set up monitoring and error tracking
-
-See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete step-by-step instructions.
-
-## Screenshots
 
 ### Landing Page
 
@@ -471,61 +407,6 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for complete step-by-step instr
 
 *View and manage contact form submissions*
 
-## Troubleshooting
-
-### Common Issues
-
-**MongoDB Connection Error:**
-```
-Error: connect ECONNREFUSED 127.0.0.1:27017
-```
-**Solution:** Ensure MongoDB is running. Start it with `mongod` command.
-
-**Port Already in Use:**
-```
-Error: listen EADDRINUSE: address already in use :::5000
-```
-**Solution:** Change the PORT in `.env` or kill the process using that port.
-
-**CORS Error:**
-```
-Access to XMLHttpRequest has been blocked by CORS policy
-```
-**Solution:** Ensure backend CORS is configured to allow your frontend origin.
-
-**Image Upload Fails:**
-```
-Error: File too large
-```
-**Solution:** Check MAX_FILE_SIZE in backend `.env` and ensure image is under 5MB.
-
-**JWT Token Invalid:**
-```
-Error: jwt malformed
-```
-**Solution:** Clear localStorage and log in again. Ensure JWT_SECRET matches between sessions.
-
-## Project Documentation
-
-### User Guides
-
-- **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 minutes
-- **[API_DOCUMENTATION.md](./API_DOCUMENTATION.md)** - Complete API reference with examples
-- **[DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)** - Step-by-step deployment instructions
-
-### Technical Documentation
-
-Detailed project specifications are available in the `.kiro/specs/mern-showcase-platform/` directory:
-
-- **[requirements.md](.kiro/specs/mern-showcase-platform/requirements.md)** - Feature requirements and acceptance criteria
-- **[design.md](.kiro/specs/mern-showcase-platform/design.md)** - System architecture and design decisions
-- **[tasks.md](.kiro/specs/mern-showcase-platform/tasks.md)** - Implementation task list
-
-### Additional Documentation
-
-- **[RESPONSIVE_DESIGN.md](./RESPONSIVE_DESIGN.md)** - Responsive design implementation details
-- **[RESPONSIVE_DESIGN_VERIFICATION.md](./RESPONSIVE_DESIGN_VERIFICATION.md)** - Responsive design testing checklist
-- **[frontend/AUTHENTICATION.md](./frontend/AUTHENTICATION.md)** - Authentication implementation details
 
 ## Contributing
 
@@ -540,38 +421,5 @@ Contributions are welcome! We appreciate your help in making this project better
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
-### Detailed Guidelines
 
-For detailed contribution guidelines, coding standards, and development workflow, please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-**Key Points:**
-- Follow the existing code style
-- Write tests for new features
-- Update documentation as needed
-- Use conventional commit messages
-- Ensure all tests pass before submitting PR
-
-## Future Enhancements
-
-- [ ] Rich text editor for descriptions
-- [ ] Project categories and tags
-- [ ] Search and filter functionality
-- [ ] Email notifications for contact submissions
-- [ ] Export newsletter subscribers to CSV
-- [ ] Multiple admin roles and permissions
-- [ ] Activity logs
-- [ ] Analytics dashboard
-- [ ] Social media integration
-- [ ] Progressive Web App (PWA) features
-
-## License
-
-ISC
-
-## Support
-
-For issues, questions, or contributions, please open an issue on the repository.
-
----
-
-**Built with ❤️ using the MERN Stack**
